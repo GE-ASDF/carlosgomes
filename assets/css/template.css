@@ -161,7 +161,8 @@ main{
     .rodape{
         text-align: center;
         position: fixed;
-        bottom:0;
+        bottom:-10%;
+        
     }
 }
 
