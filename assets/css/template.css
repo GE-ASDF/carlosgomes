@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+}
+main{
+    width: 100%;
+    height: 100Vh;
+    background-image: url("../images/carlos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 100%;
+    height: 420px;
+}
+.carlos{
+    /* background-color: white; */
+    display: flex;
+    width: 48%;
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding:25px;
+    font-size: 50px;
+    box-sizing: border-box;
+}
+.gomes{
+    /* background-color: wheat; */
+    padding:25px;
+    box-sizing: border-box;
+    font-size:100px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top:-100px;
+}
+.born_die{
+    display: flex;
+    background-color: #000015;
+    color:#fff;
+    padding:10px;
+    justify-content: center;
+    width: 25%;
+    align-self: flex-end;
+}
+.introducao{
+    background-image:linear-gradient(to bottom, #000025 50%, transparent);
+    color:white;
+    padding:25px;
+    display: flex;
+    width: 50%;
+    align-self: flex-end;
+    margin-right: 25px;
+    font-size: 24px;
+
+}
+.blockquote{
+    background-image:linear-gradient(to right, #000025 50%, transparent);
+    padding:25px;
+    color:white;
+    width: 50%;
+    font-size:25px;
+    position:relative;
+    top:30px;    
+    font-family: 'Charm', cursive, sans-serif, Arial, Helvetica, sans-serif;
+}
+.rodape{
+    background-color:white;
+    font-weight: 800;
+    height: 14.10%;
+    display: flex;
+    justify-content: center;
+    font-size:22px;
+    align-items: center;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+}
+
+@media (min-width:280px) and (max-width:715px){
+    main{
+        background-image: url("../images/carlosgomes.webp");
+        background-size:cover;
+        background-position-x: center;
+        background-position-y: center;
+        height: 100%;
+    }
+    .container{
+        max-width: 100%;
+        width: 100%;
+        margin:0;
+    }
+    .born_die{
+        margin: 0;
+        position: relative;
+        top:-50px;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .carlos{
+        margin:0;
+        padding:0;
+        margin-bottom:20px;  
+        box-sizing: border-box;     
+    }
+    .gomes{
+        box-sizing: border-box;
+        margin-bottom:10px;
+        padding:0;
+        position:relative;
+        top:-75px;
+    }
+    .introducao{
+        width: 100%;
+        font-size: 18px;
+        margin:0;
+        padding:0;
+        position:relative;
+        top:-150px;
+        padding:10px;
+        box-sizing: border-box;
+    }
+    .blockquote{
+        position:relative;
+        top:-90px;
+        font-size: 14px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .rodape{
+        position:relative;
+        text-align: center;
+        bottom:0;
+    }
+}
+
+@media (min-width:715px) and (max-width:1024px){
+    main{
+        background-position-x: center;
+    }
+    .rodape{
+        position: relative;
+    }
+    .container{
+        height: 320px;
+    }
+    .born_die{
+        position:relative;
+        top:-100px;
+    }
+    .introducao{
+        position: relative;
+        
+    }
+    .blockquote{
+        position: absolute;
+        top:-10px;
+    }
+    .rodape{
+        text-align: center;
+        position: fixed;
+        bottom:0;
+    }
+}
+
+@media (max-width:1439px){
+    .introducao{
+        position: relative;
+    }
+    .blockquote{
+        position: relative;
+        top:-5px;
+    }
+    .rodape{
+        position:fixed;
+        bottom:0;
+        height: 10%;
+    }
+}
