@@ -152,7 +152,7 @@ main{
     }
     .introducao{
         position: relative;
-        
+        top:-100px;        
     }
     .blockquote{
         position: absolute;
